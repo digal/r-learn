@@ -1,5 +1,4 @@
 require(XML)
-library(XML)
 xmlfile <- xmlTreeParse("http://export.yandex.ru/last/last20x-static.xml")
 requests <- xmlSApply(xmlRoot(xmlfile)[[1]], xmlValue)
 

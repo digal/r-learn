@@ -12,4 +12,4 @@ freq <- sort(table(words), decreasing=TRUE)
 #filter out short words and non-words
 freq <- freq[grep("^[a-zа-я]{4,}$", names(freq))]
 
-barplot(freq[1:10])
+barplot(freq[1:10], las=2)
